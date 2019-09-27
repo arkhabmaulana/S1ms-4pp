@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var input: EditText
     private lateinit var save: Button
     private lateinit var input_trim: String
+    private lateinit var add: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,6 +39,13 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        add = findViewById(R.id.addLead)
+
+        add.setOnClickListener {
+            val intent = Intent(this, AddLeadPage::class.java)
+            startActivity(intent)
+        }
+
     }
 
     private fun saveData(input: String) {
@@ -51,7 +59,7 @@ class MainActivity : AppCompatActivity() {
 
         val strReq = object : JsonObjectRequest(
             Method.POST, Server.saveData, jsonBody,
-            Response.Listener { response ->
+            Response.Listener { _ ->
                 try {
                     Toast.makeText(
                         this@MainActivity,

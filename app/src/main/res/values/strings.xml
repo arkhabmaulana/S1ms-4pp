@@ -8,4 +8,18 @@
     <string name="Save">Save</string>
     <string name="InputText">Input Text</string>
     <string name="Text">Inputkan kata terserah!</string>
+    <string name="Add">Add</string>
+    <string name="country_prompt">Select Sales</string>
+    <string name="gambar">Deskripsi Gambar</string>
+    <string name="Teks">Teks Gambar</string>
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
 </resources>
