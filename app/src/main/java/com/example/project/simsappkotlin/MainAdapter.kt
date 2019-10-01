@@ -12,7 +12,7 @@ class MainAdapter(val homeFeed: HomeFeed) : RecyclerView.Adapter<CustomViewHolde
 
     //    numberOfItems
     override fun getItemCount(): Int {
-        return homeFeed.sales_list.count()
+        return homeFeed.lead.count()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder {
@@ -23,8 +23,9 @@ class MainAdapter(val homeFeed: HomeFeed) : RecyclerView.Adapter<CustomViewHolde
     }
 
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
-        val pictureT = homeFeed.sales_list.get(position)
-        holder.view.lead_text_view.text = pictureT.name
+        val pictureT = homeFeed.lead.get(position)
+        holder.view.lead_text_view.text = pictureT.lead_id
+        holder.view.opp_text_view.text = pictureT.opp_name
     }
 }
 

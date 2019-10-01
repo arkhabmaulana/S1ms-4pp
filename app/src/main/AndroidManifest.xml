@@ -13,6 +13,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".AddLeadPage"></activity>
+        <activity android:name=".LeadViewPage"></activity>
+        <activity android:name=".PackageTracking"></activity>
         <activity android:name=".LoginMain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

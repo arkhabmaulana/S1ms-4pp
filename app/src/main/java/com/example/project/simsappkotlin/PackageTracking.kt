@@ -4,18 +4,18 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.GsonBuilder
-import kotlinx.android.synthetic.main.activity_add_lead_page.*
+import kotlinx.android.synthetic.main.activity_lead_view_page.*
 import okhttp3.*
 import util.Server.getDataLeadRegister
 import java.io.IOException
 
-class AddLeadPage : AppCompatActivity() {
+class PackageTracking : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_lead_page)
+        setContentView(R.layout.activity_lead_view_page)
 
-        recyclerView_main.layoutManager = LinearLayoutManager(this)
+        expandable.layoutManager = LinearLayoutManager(this)
 
         fetchJson()
     }
@@ -33,10 +33,10 @@ class AddLeadPage : AppCompatActivity() {
 
                 val gson = GsonBuilder().create()
 
-                val homeFeed = gson.fromJson(body, HomeFeed::class.java)
+                val homeLead = gson.fromJson(body, HomeLead::class.java)
 
                 runOnUiThread {
-                    recyclerView_main.adapter = MainAdapter(homeFeed)
+                    expandable.adapter = LeadAdapter(homeLead)
                 }
             }
 
@@ -47,6 +47,6 @@ class AddLeadPage : AppCompatActivity() {
     }
 }
 
-class HomeFeed(val lead: List<LeadR>)
+class HomeLead(val lead: List<LeadRegister>)
 
-class LeadR(val lead_id: String, val opp_name: String)
+class LeadRegister(val lead_id: String, val opp_name: String)

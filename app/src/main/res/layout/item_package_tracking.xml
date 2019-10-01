@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="22dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ract_background"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/libertychair" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ract_background"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/libertytable" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#f7f8fa"
+        android:orientation="horizontal">
+
+        <customfonts.MyTextViewRobotoRegular
+            android:id="@+id/lblListItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="70dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Number"
+            android:textColor="#323e46"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="#d4dce1" />
+
+        <customfonts.MyTextViewRobotoRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="7017983251"
+            android:textColor="#758692"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <customfonts.MyTextViewRobotoRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="90dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Date"
+            android:textColor="#323e46"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="#d4dce1" />
+
+        <customfonts.MyTextViewRobotoRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="22 Oct 2017 at 10:39"
+            android:textColor="#758692"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#f7f8fa"
+        android:orientation="horizontal">
+
+        <customfonts.MyTextViewRobotoRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="79.5dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Status"
+            android:textColor="#323e46"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="#d4dce1" />
+
+        <customfonts.MyTextViewRobotoRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Out for Delivery"
+            android:textColor="#4cb906"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <customfonts.MyTextViewRobotoRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="70.5dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Delivery"
+            android:textColor="#323e46"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="#d4dce1" />
+
+        <customfonts.MyTextViewRobotoRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="25 Oct 2017"
+            android:textColor="#758692"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#f7f8fa"
+        android:orientation="horizontal">
+
+        <customfonts.MyTextViewRobotoRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="70.9dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Amount"
+            android:textColor="#323e46"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="#d4dce1" />
+
+        <customfonts.MyTextViewRobotoRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="$834,93"
+            android:textColor="#758692"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

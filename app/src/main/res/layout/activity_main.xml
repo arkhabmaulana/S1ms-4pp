@@ -36,4 +36,11 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/Add" />
 
+    <Button
+        android:id="@+id/leadView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/Lead" />
+
 </LinearLayout>

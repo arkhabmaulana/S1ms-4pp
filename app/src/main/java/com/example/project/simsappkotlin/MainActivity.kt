@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var save: Button
     private lateinit var input_trim: String
     private lateinit var add: Button
+    private lateinit var lead: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +30,8 @@ class MainActivity : AppCompatActivity() {
 
         input = findViewById(R.id.input_text)
         save = findViewById(R.id.button_save)
+        add = findViewById(R.id.addLead)
+        lead = findViewById(R.id.leadView)
 
         save.setOnClickListener {
             input_trim = input.text.toString().trim { it <= ' ' }
@@ -39,10 +42,13 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        add = findViewById(R.id.addLead)
-
         add.setOnClickListener {
             val intent = Intent(this, AddLeadPage::class.java)
+            startActivity(intent)
+        }
+
+        lead.setOnClickListener {
+            val intent = Intent(this, PackageTracking::class.java)
             startActivity(intent)
         }
 

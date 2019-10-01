@@ -12,6 +12,7 @@
     <string name="country_prompt">Select Sales</string>
     <string name="gambar">Deskripsi Gambar</string>
     <string name="Teks">Teks Gambar</string>
+    <string name="Lead">Lead</string>
     <string-array name="country_arrays">
         <item>Malaysia</item>
         <item>United States</item>
